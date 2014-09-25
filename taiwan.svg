@@ -37,7 +37,7 @@
             .large{
             }
             circle {
-                transform: translate(100px);
+                transform: translate(160px);
             }
             text {
                 transform: translate(-20px);
@@ -157,6 +157,6 @@
     <circle fill="#920EA5" cx="207.667" cy="67.667" r="3"/>
     <circle fill="#1EE2BD" cx="220.334" cy="82.333" r="3"/>
     <circle fill="#FFE317" cx="146.667" cy="109.333" r="3"/>
-    <text x="165" y="110" style="text-anchor: end; fill: none; stroke: #F4198C;">Taiwan！</text>
-    <text class="message" x="165" y="155" style="text-anchor: end; fill: #F4198C; stroke: #F4198C;">104夜宿仁愛路</text>
+    <text x="195" y="110" style="text-anchor: end; fill: none; stroke: #F4198C;">Taiwan！</text>
+    <text class="message" x="195" y="155" style="text-anchor: end; fill: #F4198C; stroke: #F4198C;">104夜宿仁愛路</text>
 </svg>
