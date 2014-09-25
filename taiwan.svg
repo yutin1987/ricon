@@ -4,31 +4,62 @@
             transition: all 0.5s;
             transform-origin: 50% 50%;
         }
+        text {
+            font-family="'proxima-nova', sans-serif";
+            font-size: 24px;
+        }
+        .message {
+            opacity: 0;
+        }
         circle:hover {
         }
-        @media all and (max-width: 720px) {
-            .medium{
-              transform: scale(0);
+        @media all and (max-width: 480px) {
+            circle {
+               transform: scale(0);
+            }
+            .mini1 {
+               transform: scale(2.8) translate(-17px, 15px);
+            }
+            .mini2 {
+               transform: scale(1);
+               transform: scale(2) translate(-28px, -67px);
+            }
+            .mini3 {
+               transform: scale(1);
+               transform: scale(2) translate(-22px, 9px);
+            }
+            .mini4 {
+               transform: scale(1);
+               transform: scale(3) translate(11px, -35px);
             }
         }
-        @media all and (max-width: 1200px) {
+        @media all and (min-width: 992px) {
             .large{
-                display: none;
+            }
+            circle {
+                transform: translate(100px);
+            }
+            text {
+                transform: translate(-20px);
+                font-size: 48px;
+            }
+            .message {
+                opacity: 1;
             }
         }
     </style>
-    <circle class="medium" fill="#F4198C" cx="210.5" cy="53.167" r="7.5"/>
-    <circle class="medium" fill="#F4198C" cx="209.5" cy="137.834" r="7.5"/>
-    <circle class="medium" fill="#F4198C" cx="191.334" cy="189.667" r="7.5"/>
-    <circle class="medium" fill="#1EE2BD" cx="145.667" cy="197.334" r="7.5"/>
-    <circle class="medium" fill="#FF8150" cx="196.667" cy="75.667" r="7.5"/>
-    <circle class="medium" fill="#920EA5" cx="226" cy="94" r="7.5"/>
-    <circle class="medium" fill="#920EA5" cx="144" cy="122.667" r="7.5"/>
-    <circle class="medium" fill="#FF8150" cx="79" cy="187.667" r="7.5"/>
-    <circle class="medium" fill="#FF8150" cx="167" cy="222.001" r="7.5"/>
-    <circle class="medium" fill="#FF8150" cx="230.833" cy="63.166" r="5.833"/>
-    <circle class="medium" fill="#F4198C" cx="157.667" cy="114.333" r="5.833"/>
-    <circle class="medium" fill="#F4198C" cx="176.667" cy="127.666" r="5.833"/>
+    <circle fill="#F4198C" cx="210.5" cy="53.167" r="7.5"/>
+    <circle fill="#F4198C" cx="209.5" cy="137.834" r="7.5"/>
+    <circle fill="#F4198C" cx="191.334" cy="189.667" r="7.5"/>
+    <circle fill="#1EE2BD" cx="145.667" cy="197.334" r="7.5"/>
+    <circle fill="#FF8150" cx="196.667" cy="75.667" r="7.5"/>
+    <circle fill="#920EA5" cx="226" cy="94" r="7.5"/>
+    <circle fill="#920EA5" cx="144" cy="122.667" r="7.5"/>
+    <circle fill="#FF8150" cx="79" cy="187.667" r="7.5"/>
+    <circle fill="#FF8150" cx="167" cy="222.001" r="7.5"/>
+    <circle fill="#FF8150" cx="230.833" cy="63.166" r="5.833"/>
+    <circle fill="#F4198C" cx="157.667" cy="114.333" r="5.833"/>
+    <circle fill="#F4198C" cx="176.667" cy="127.666" r="5.833"/>
     <circle fill="#FFE317" cx="163.667" cy="151.667" r="5.833"/>
     <circle fill="#920EA5" cx="188.667" cy="142" r="5.833"/>
     <circle fill="#F4198C" cx="163.667" cy="179" r="5.833"/>
@@ -42,19 +73,19 @@
     <circle fill="#F4198C" cx="165" cy="92" r="5.833"/>
     <circle fill="#920EA5" cx="130.333" cy="144.333" r="5.833"/>
     <circle fill="#920EA5" cx="133.333" cy="213.999" r="5.833"/>
-    <circle fill="#FFE317" cx="203.5" cy="245.164" r="4.833"/>
+    <circle class="mini2" fill="#FFE317" cx="203.5" cy="245.164" r="4.833"/>
     <circle fill="#FFE317" cx="216" cy="226.664" r="3.333"/>
     <circle fill="#1EE2BD" cx="212.667" cy="260.665" r="4"/>
     <circle fill="#920EA5" cx="198" cy="268.332" r="3.667"/>
     <circle fill="#1EE2BD" cx="83.334" cy="206.333" r="3.667"/>
     <circle fill="#FF8150" cx="213" cy="89.668" r="3.666"/>
-    <circle fill="#F4198C" cx="200" cy="91" r="3.666"/>
+    <circle class="mini1" fill="#F4198C" cx="200" cy="91" r="3.666"/>
     <circle fill="#1EE2BD" cx="175.333" cy="97.334" r="3.666"/>
     <circle fill="#1EE2BD" cx="167.333" cy="105.667" r="3.666"/>
     <circle fill="#FF8150" cx="155" cy="101.667" r="3.666"/>
     <circle fill="#FF8150" cx="214.334" cy="122" r="3.666"/>
     <circle fill="#F4198C" cx="223.667" cy="108.667" r="3.666"/>
-    <circle fill="#FF8150" cx="209" cy="98.334" r="3.666"/>
+    <circle class="mini3" fill="#FF8150" cx="209" cy="98.334" r="3.666"/>
     <circle fill="#F4198C" cx="197" cy="149" r="3.666"/>
     <circle fill="#FFE317" cx="171" cy="141" r="3.666"/>
     <circle fill="#FFE317" cx="193" cy="159" r="3.666"/>
@@ -107,7 +138,7 @@
     <circle fill="#FFE317" cx="164.667" cy="236.998" r="3"/>
     <circle fill="#FFE317" cx="151.667" cy="245.998" r="3"/>
     <circle fill="#FFE317" cx="151.667" cy="254.665" r="3"/>
-    <circle fill="#1EE2BD" cx="133.333" cy="202.665" r="3"/>
+    <circle class="mini4" fill="#1EE2BD" cx="133.333" cy="202.665" r="3"/>
     <circle fill="#FF8150" cx="132.667" cy="194.665" r="3"/>
     <circle fill="#F4198C" cx="135.667" cy="168.665" r="3"/>
     <circle fill="#1EE2BD" cx="116.333" cy="169.665" r="3"/>
@@ -126,4 +157,6 @@
     <circle fill="#920EA5" cx="207.667" cy="67.667" r="3"/>
     <circle fill="#1EE2BD" cx="220.334" cy="82.333" r="3"/>
     <circle fill="#FFE317" cx="146.667" cy="109.333" r="3"/>
+    <text x="165" y="110" style="text-anchor: end; fill: none; stroke: #F4198C;">Taiwan！</text>
+    <text class="message" x="165" y="155" style="text-anchor: end; fill: #F4198C; stroke: #F4198C;">104夜宿仁愛路</text>
 </svg>
